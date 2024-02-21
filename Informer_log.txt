@@ -1,0 +1,26 @@
+DEVICE: GPU
+Args in experiment:
+tuple(model='informer', data='ETTh1', root_path='./data/ETT/', data_path='ETTh1.csv', features='S', target='OT', freq='h', detail_freq='h', checkpoints='./checkpoints/', seq_len=96, label_len=48, pred_len=48, enc_in=1, dec_in=1, c_out=1, d_model=512, n_heads=8, e_layers=2, d_layers=1, s_layers=[3, 2, 1], d_ff=2048, factor=5, padding=0, distil=True, dropout=0.05, attn='prob', embed='timeF', activation='gelu', output_attention=False, do_predict=False, mix=True, cols='+', num_workers=0, itr=1, train_epochs=1, batch_size=32, patience=3, learning_rate=0.0001, des='Informer_ms', loss='mse', lradj='type1', use_amp=False, inverse=False, device='GPU', seed=42, do_train=True, ckpt_path='./checkpoints/informer_ETTh1_ftS_sl96_ll48_pl48_dm512_nh8_el2_dl1_df2048_atprob_fc5_ebtimeF_dtTrue_mxTrue_Informer_ms_0/Informer.ckpt')
+Setting: informer_ETTh1_ftS_sl96_ll48_pl48_dm512_nh8_el2_dl1_df2048_atprob_fc5_ebtimeF_dtTrue_mxTrue_Informer_ms_0
+>>>>>>>start training : informer_ETTh1_ftS_sl96_ll48_pl48_dm512_nh8_el2_dl1_df2048_atprob_fc5_ebtimeF_dtTrue_mxTrue_Informer_ms_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 8497
+val 2833
+test 2833
+	iters: 50, epoch: 1 | loss: 0.1516064
+	speed: 0.2905s/iter; left time: 62.7532s
+	iters: 100, epoch: 1 | loss: 0.2176565
+	speed: 0.2636s/iter; left time: 43.7536s
+	iters: 150, epoch: 1 | loss: 0.2207466
+	speed: 0.2665s/iter; left time: 30.9174s
+	iters: 200, epoch: 1 | loss: 0.2615332
+	speed: 0.2646s/iter; left time: 17.4638s
+	iters: 250, epoch: 1 | loss: 0.1273981
+	speed: 0.2652s/iter; left time: 4.2438s
+Epoch: 1 cost time: 71.45861411094666
+Epoch: 1, Steps: 265 | Train Loss: 0.1900257 Vali Loss: 0.0924739 Test Loss: 0.0896722
+Validation loss decreased (inf --> 0.092474).  Saving model ...
+>>>>>>>testing : informer_ETTh1_ftS_sl96_ll48_pl48_dm512_nh8_el2_dl1_df2048_atprob_fc5_ebtimeF_dtTrue_mxTrue_Informer_ms_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2833
+test shape: (88, 32, 48, 1) (88, 32, 48, 1)
+test shape: (2816, 48, 1) (2816, 48, 1)
+mse:0.08974949270486832, mae:0.23691514134407043, rmse:0.29958218336105347
