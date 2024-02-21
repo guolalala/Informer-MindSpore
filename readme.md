@@ -5,7 +5,7 @@
 ![Python 3.6](https://img.shields.io/badge/python-3.6-green.svg?style=plastic)
 
 <p align="center">
-<img src=".\img\informer.png" height = "360" alt="" align=center />
+<img src="./img/informer.png" height = "360" alt="" align=center />
 <br><br>
 <b>图 1.</b> Informer 模型架构.
 </p>
