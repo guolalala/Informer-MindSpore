@@ -26,7 +26,7 @@ pip install -r requirements.txt
 
 ## Configs
 
-模型参数定义在 `configs/` 文件夹下，支持GPU和Ascend两种环境下的模型训练和测试，各参数的含义见下方表格
+配置文件位于 `configs` 文件夹下，支持GPU和Ascend两种环境下的模型训练和测试，各参数的含义见下方表格
 
 
 
@@ -82,7 +82,7 @@ pip install -r requirements.txt
 
 ## Train
 
-执行以下命令对模型进行训练
+训练脚本位于 `run.py` 文件中，可以通过以下命令进行训练：
 
 ```bash
 python run.py --config_name configs/informer_GPU.yaml
